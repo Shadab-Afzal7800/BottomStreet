@@ -74,7 +74,9 @@ class _HomeViewState extends State<HomeView> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 'Overview'.text.xl2.bold.make(),
-                20.heightBox,
+                const SizedBox(
+                  height: 20,
+                ),
                 ListView.builder(
                     physics: const NeverScrollableScrollPhysics(),
                     itemCount: dataName.length,
